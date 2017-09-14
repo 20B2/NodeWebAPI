@@ -57,7 +57,7 @@ var bookRouter = require('./routes/bookRoutes')(Book);
 //         });
 //     });
 
-app.use('/api', bookRouter);
+app.use('/api/books', bookRouter);
 
 app.get('/', (req,res) => {
     res.send('REST API with Node and Express');
